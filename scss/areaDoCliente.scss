@@ -1,0 +1,126 @@
+$primary-dark: #473C38;
+$brand: #B2935B;
+$secundary: #C2B19C;
+$bright: #F0F1F0;
+$white: #FFFFFF;
+$radius: 5px;
+
+* {
+    margin: 0;
+    padding: 0;
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+img {
+    display: block;
+}
+
+@mixin btn2() {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    background-color: $primary-dark;
+    border-radius: $radius;
+    color: $bright;
+    padding: 5px 26px 6px 25px;
+    display: inline-block;
+    line-height: 24px;
+    border: 1px solid #000000;
+    cursor: pointer;
+    &:hover{
+        background-color: $brand;
+    }
+}
+
+.areaDoCliente {
+    background-color: #473C38;
+    // width: 100vw;
+    // height: 100vh;
+    padding: 100px 160px;
+
+    .container {
+        width: 1120px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .content {
+
+            background-color: #C4C4C4;
+            width: 50%;
+            height: 650px;
+
+            .logo{
+                margin: 50px 199px;
+            }
+            .areaRestrita{
+
+                margin-left: 88px;
+                margin-right: 88px;
+
+                h1 {
+                    font-size: 36px;
+                    color: #000000;
+                    font-weight: 400;
+                    margin-bottom: 20px;
+    
+                }
+                
+                label{
+                    line-height: 24px;
+                    font-family: 'Roboto', sans-serif;
+                    color: $primary-dark;
+                }
+                input {
+                    display: block;
+                    width: 100%;
+                    box-sizing: border-box;
+                    outline: none;
+                    color: #000000;
+                    margin-bottom: 10px;
+                    height: 30px;
+
+                }
+
+                #btn2 {
+                    @include btn2();
+                    padding: 3px 21px;
+                    margin-bottom: 20px;
+                    
+                }
+
+                a{
+                    color: $brand;
+                    
+                }
+                
+            }
+
+            
+        }
+
+
+        .image {
+            width: 50%;
+            height: 650px;
+            background-image: url('../img/rustico-login\ 1.jpg');
+            background-size: cover;
+        }
+    }
+
+
+}

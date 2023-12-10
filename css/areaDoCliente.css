@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+}
+
+img {
+  display: block;
+}
+
+.areaDoCliente {
+  background-color: #473C38;
+  padding: 100px 160px;
+}
+.areaDoCliente .container {
+  width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.areaDoCliente .container .content {
+  background-color: #C4C4C4;
+  width: 50%;
+  height: 650px;
+}
+.areaDoCliente .container .content .logo {
+  margin: 50px 199px;
+}
+.areaDoCliente .container .content .areaRestrita {
+  margin-left: 88px;
+  margin-right: 88px;
+}
+.areaDoCliente .container .content .areaRestrita h1 {
+  font-size: 36px;
+  color: #000000;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.areaDoCliente .container .content .areaRestrita label {
+  line-height: 24px;
+  font-family: "Roboto", sans-serif;
+  color: #473C38;
+}
+.areaDoCliente .container .content .areaRestrita input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  color: #000000;
+  margin-bottom: 10px;
+  height: 30px;
+}
+.areaDoCliente .container .content .areaRestrita #btn2 {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  background-color: #473C38;
+  border-radius: 5px;
+  color: #F0F1F0;
+  padding: 5px 26px 6px 25px;
+  display: inline-block;
+  line-height: 24px;
+  border: 1px solid #000000;
+  cursor: pointer;
+  padding: 3px 21px;
+  margin-bottom: 20px;
+}
+.areaDoCliente .container .content .areaRestrita #btn2:hover {
+  background-color: #B2935B;
+}
+.areaDoCliente .container .content .areaRestrita a {
+  color: #B2935B;
+}
+.areaDoCliente .container .image {
+  width: 50%;
+  height: 650px;
+  background-image: url("../img/rustico-login 1.jpg");
+  background-size: cover;
+}/*# sourceMappingURL=areaDoCliente.css.map */

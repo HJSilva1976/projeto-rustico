@@ -1,0 +1,684 @@
+$primary-dark: #473C38;
+$brand: #B2935B;
+$secundary: #C2B19C;
+$bright: #F0F1F0;
+$white: #FFFFFF;
+$radius: 5px;
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+img {
+    display: block;
+}
+
+.hero-section {
+    background-color: $primary-dark;
+    width: 100%;
+    height: 650px;
+    padding-top: 29px;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header {
+    background-color: rgb(71, 60, 56, 0.9);
+    backdrop-filter: blur(5px);
+    padding: 16px 0;
+    width: 100%;
+    position: sticky;
+    top: 0;
+
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+}
+
+.menu {
+
+
+    a {
+        font-family: 'Playfair Display', serif;
+        color: #FFFFFF;
+        font-size: 16px;
+        text-decoration: none;
+        margin-left: 66px;
+        &:hover{
+            border-bottom: 2px solid $bright;
+        }
+
+    }
+}
+
+.rede-moveis {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 120px;
+
+
+    h1 {
+
+        font-weight: 400;
+        font-size: 60px;
+        color: $white;
+        max-width: 643px;
+        line-height: 100%;
+        margin-bottom: 15px;
+
+
+    }
+
+}
+
+
+h2,
+h3 {
+
+    color: $primary-dark;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+.rede-moveis p {
+
+    max-width: 450px;
+    height: 49px;
+    color: $white;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    line-height: 18px;
+    border-radius: $radius;
+    background-color: $secundary;
+    padding: 15px 52px 14px 51px;
+    color: $primary-dark;
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid #000000;
+    &:hover{
+        background-color: $bright;
+        
+    }
+
+}
+
+@mixin btn2() {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    background-color: $primary-dark;
+    border-radius: $radius;
+    color: $bright;
+    padding: 5px 26px 6px 25px;
+    display: inline-block;
+    line-height: 24px;
+    border: 1px solid #000000;
+    cursor: pointer;
+    &:hover{
+        background-color: $brand;
+    }
+}
+
+.nossa-fabrica {
+
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        // width: 356px;
+        // height: 595px;
+
+        margin: 100px 0;
+
+    }
+
+
+    .content-nossa-fabrica {
+
+        max-width: 642px;
+        // max-height: 359px;
+
+        h2 {
+            // font-size: 48px;
+            font-weight: 400;
+            color: $primary-dark;
+            line-height: 100%;
+            margin-top: 211px;
+            margin-bottom: 25px;
+
+        }
+
+        p {
+            color: #666666;
+            font-family: 'Roboto', sans-serif;
+            line-height: 130%;
+            font-weight: 400;
+            margin-bottom: 25px;
+
+        }
+
+        .btn2 {
+            @include btn2();
+
+        }
+
+    }
+}
+
+.card-section {
+
+    background-color: $bright;
+    width: 100%;
+
+    .container {
+
+        .madeiras {
+
+            h3 {
+                // background-color: #B2935B;
+                text-align: center;
+                padding: 50px 0;
+                font-size: 48px;
+                line-height: 100%;
+
+            }
+        }
+
+        .card {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 50px;
+
+            .card-flex {
+                background-color: #FAFAFA;
+                width: 356px;
+                height: 442px;
+                font-weight: 130%;
+                box-sizing: border-box;
+                padding: 38px 38px 32px 38px;
+
+
+                img {
+                    margin-bottom: 17px;
+                }
+
+                h3 {
+                    font-size: 24px;
+                    font-weight: 400;
+                    color: $primary-dark;
+                    margin-bottom: 17px;
+
+
+                }
+
+                p {
+                    line-height: 130%;
+                    color: #666666;
+                    margin-bottom: 17px;
+
+
+                }
+
+                .btn2 {
+                    @include btn2();
+                    display: block;
+                    text-align: center;
+                }
+
+            }
+        }
+    }
+}
+
+.avaliacao {
+
+    .container {
+
+        text-align: center;
+        padding: 50px 0;
+
+        img {
+            color: $primary-dark;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        p {
+            font-size: 40px;
+            line-height: 100%;
+            color: $primary-dark;
+            padding-bottom: 20px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 400;
+        }
+
+        span {
+            color: #666666;
+            line-height: 130%;
+            font-family: 'Roboto', sans-serif
+        }
+    }
+
+}
+
+.formulario {
+    background-color: $secundary;
+
+
+    .container {
+        display: flex;
+        // align-items: center;
+        // justify-content: space-between;
+        flex-direction: row;
+        padding: 63px 0;
+
+
+
+
+        input {
+            display: inline-block;
+            width: 451px;
+            height: 30px;
+            color: #666666;
+            margin-right: 28px;
+            
+
+        }
+
+        .btn2 {
+            @include btn2();
+            padding: 3px 13px;
+            width: 169px;
+        }
+
+
+
+    }
+
+}
+
+footer {
+
+    background-color: $primary-dark;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 25px;
+        padding: 50px 0;
+
+        h5 {
+            // font-family: 'Playfair Display', serif;
+            font-weight: 400;
+            font-size: 24px;
+            color: $white;
+            margin-bottom: 11px;
+        }
+
+        p {
+            line-height: 130%;
+            font-weight: 400;
+            color: #F0F1F0;
+        }
+    }
+
+
+
+}
+
+@media(max-width: 1147px) {
+
+    .formulario {
+
+
+
+        .container {
+
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            padding-left: 15px;
+            // padding: 53px;
+
+
+            input {
+                margin-bottom: 13px;
+            }
+
+        }
+
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .menu {
+       //display: none;
+       background-color: $brand;
+       position: absolute;
+       left: 0;
+       top: 129px; //(peguei o tamanho do menu)
+       width: 100%;
+       height: 643px;
+       padding-left: 15px;
+       padding-right: 15px;
+       box-sizing: border-box;
+       transform: translateX(-100%);
+       transition: 0.3s;
+
+
+       a{
+        display: block;
+        margin: 0;
+        padding: 20px 15px;
+        color: $primary-dark;
+        border-bottom: 1px solid $primary-dark;
+
+       }
+    }
+    //classe add no js
+    .abrirMenu{
+        //display: block;
+        transform: translateX(0);
+    }
+
+    .barra {
+        width: 40px;
+        height: 3px;
+        background-color: $white;
+        margin-bottom: 3px;
+        border-radius: 3px;
+    }
+
+    .barraSelecionada .barra{
+        background-color: $brand;
+    }
+
+    .rede-moveis {
+
+        .content {
+            h1 {
+                font-size: 40px;
+
+            }
+        }
+    }
+
+    .nossa-fabrica {
+
+        // display: flex;
+        // justify-content: start;
+        // align-items: center;
+        column-gap: 40px;
+
+        .content-nossa-fabrica {
+
+            width: 100%;
+            min-width: 384px;
+            max-width: 550px;
+
+            h2 {
+                font-size: 32px;
+                margin-top: 115px;
+            }
+        }
+
+        .armario-rustico {
+            img {
+                width: 100%;
+                min-width: 232px;
+                max-width: 558px;
+
+            }
+        }
+
+
+    }
+
+    .card-section {
+
+        .card {
+
+            display: flex;
+            flex-direction: column;
+            row-gap: 33px;
+
+        }
+    }
+
+
+}
+
+@media (max-width:837px) {
+
+    .rede-moveis {
+        display: flex;
+        flex-direction: column;
+        padding-top: 32px;
+        text-align: center;
+
+        .content {
+
+
+
+            h1 {
+                margin-bottom: 16px;
+                line-height: 36px;
+            }
+
+            p {
+
+                line-height: 24px;
+                margin-bottom: 16px;
+                max-width: 643px;
+            }
+        }
+
+        .cama {
+            margin-top: 52px;
+
+            img {
+                width: 100%;
+                width: 264px;
+                max-width: 362px;
+                height: 210px;
+
+            }
+
+        }
+
+    }
+
+    footer {
+
+        .container {
+
+
+
+            h5 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 598px) {
+
+    .hero-section {
+        height: 610px;
+
+    }
+
+    .rede-moveis {
+
+
+        .content {
+
+            text-align: center;
+            // padding: 16px;
+
+
+            h1 {
+                font-size: 32px;
+                line-height: 36px;
+
+
+
+            }
+
+            P {
+                line-height: 24px;
+                margin-bottom: 24px;
+
+            }
+
+            a {
+                margin-top: 16px;
+            }
+        }
+
+        //.cama {
+            // img {
+            //     width: 100%;
+            //     width: 264px;
+            //     max-width: 362px;
+            //     height: 210px;
+
+            // }
+        //}
+
+
+    }
+
+    .nossa-fabrica {
+        .content-nossa-fabrica {
+
+
+            h2 {
+                font-size: 28px;
+                margin-top: 115px;
+
+            }
+
+            p {
+
+                margin-bottom: 39px;
+
+            }
+
+            .btn2 {
+
+                margin-bottom: 100px;
+            }
+
+        }
+    }
+
+    .armario-rustico {
+
+
+        img {
+
+            display: none;
+        }
+    }
+
+    .card-section {
+
+        .container {
+
+            .madeiras {
+
+                h3 {
+
+                    font-size: 28px;
+
+                }
+            }
+        }
+
+    }
+
+    .avaliacao {
+
+        .container {
+
+            p {
+
+                font-size: 24px;
+            }
+        }
+    }
+
+    .formulario {
+
+        .container {
+
+            input {
+
+                width: 384px;
+                box-sizing: border-box;
+
+            }
+        }
+    }
+
+    footer {
+        .container {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            padding: 80px 15px;
+
+        }
+    }
+}
+
+.areaDoCliente{
+    background-color: $primary-dark;
+}
